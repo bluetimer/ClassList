@@ -5,9 +5,9 @@
     "Pronouns": "Pronouns",
     "School": "School",
     "GraduationYear": "GraduationYear",
-    "Favorite Color": "Blue",
-    "Tiktok or Insta?": "Tiktok",
-    "Dogs or Cats?": "Dogs",
+    "FavoriteColor": "Blue",
+    "TiktokorInsta?": "Tiktok",
+    "DogsorCats?": "Dogs",
     "Nickname": "yes"
   },
   {
@@ -15,10 +15,10 @@
     "LastName": "Allen",
     "Pronouns": "He/His",
     "School": "Williamsburg Charter High School",
-    "Graduation Year": 2022,
-    "Favorite Color": "Blue",
-    "Tiktok or Insta?": "Tiktok",
-    "Dogs or Cats?": "Dogs",
+    "GraduationYear": 2022,
+    "FavoriteColor": "Blue",
+    "TiktokorInsta?": "Tiktok",
+    "DogsorCats?": "Dogs",
     "Nickname": "yes"
   },
   {
@@ -26,10 +26,10 @@
     "LastName": "Apupalo",
     "Pronouns": "He/His",
     "School": "NYIT",
-    "Graduation Year": 2025,
-    "Favorite Color": "Blue",
-    "Tiktok or Insta?": "Insta",
-    "Dogs or Cats?": "Rooster",
+    "GraduationYear": "2025",
+    "FavoriteColor": "Blue",
+    "TiktokorInsta?": "Insta",
+    "DogsorCats?": "Rooster",
     "Nickname": "si"
   },
   {
@@ -37,10 +37,10 @@
     "LastName": "Bonifacio",
     "Pronouns": "He/His",
     "School": "orchard collegiate academy ( OCA )",
-    "Graduation Year": 2022,
-    "Favorite Color": "Blue",
-    "Tiktok or Insta?": "Insta",
-    "Dogs or Cats?": "Fish",
+    "GraduationYear": 2022,
+    "FavoriteColor": "Blue",
+    "TiktokorInsta?": "Insta",
+    "DogsorCats?": "Fish",
     "Nickname": ""
   },
   {

@@ -5,39 +5,10 @@ export default function App() {
   return (
     <div className="App">
       <table>
-        <tr>
-          <th>
-            <Name text={data[0].FirstName} />
-          </th>
-          <th>
-            <Name text={data[0].LastName} />
-          </th>
-          <th>
-            <Name text={data[0].Pronouns} />
-          </th>
-        </tr>
-        <tr>
-          <td>
-            <Name text={data[1].FirstName} />
-          </td>
-          <td>
-            <Name text={data[1].LastName} />
-          </td>
-          <td>
-            <Name text={data[1].Pronouns} />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <Name text={data[2].FirstName} />
-          </td>
-          <td>
-            <Name text={data[2].LastName} />
-          </td>
-          <td>
-            <Name text={data[2].Pronouns} />
-          </td>
-        </tr>
+        {}
+        <Row index="0" />
+        <Row index="1" />
+        <Row index="2" />
       </table>
     </div>
   );
@@ -45,4 +16,26 @@ export default function App() {
 
 function Name(props) {
   return <p> {props.text} </p>;
+}
+
+function Row(props) {
+  return (
+    <tr>
+      <td>
+        <Name text={data[props.index].FirstName} />
+      </td>
+      <td>
+        <Name text={data[props.index].LastName} />
+      </td>
+      <td>
+        <Name text={data[props.index].Pronouns} />
+      </td>
+      <td>
+        <Name text={data[props.index].School} />
+      </td>
+      <td>
+        <Name text={data[props.index].GraduationYear} />
+      </td>
+    </tr>
+  );
 }
