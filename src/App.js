@@ -1,6 +1,17 @@
 import "./styles.css";
 import data from "./classdata.json";
 
+// function VeryBeautifulNumber(num) {
+//   return (<span> { num } </span>);
+// }
+function displayPerson(first, last) {
+  return;
+  <div>
+    <p> {first}</p>
+    <p>{last}</p>
+  </div>;
+}
+
 export default function App() {
   let students = [
     ["Mikkail", "Allen"],
@@ -13,23 +24,32 @@ export default function App() {
     ["Yonatan", "De La Mora"],
     ["Denny", "Fernandez"]
   ];
+  //---------------------------------
+  // let array = []
+  // for (let n = 1; n <= 10; n++) {
+  //   array.push(VeryBeautifulNumber(n));
+  // }
+  // let x = 0;
+  // let y = 1;
+  //-------------------------------------------------
+  //look at line 35 and
+  // let numstudents = data.length;
+  // let array = [];
+  // for (let i = 0; i < numstudents; i++) {
+  //   array.push(<Row person={data[i]} />);
+  // }
 
-  let names = students.map(function (array) {
-    return array[0] + " " + array[1] + "\n";
+  let array = data.map(function (person) {
+    return <Row person={person} />;
   });
-  console.log(names);
-
-  let numstudents = data.length;
-  let array = [];
-  for (let i = 0; i < numstudents; i++) {
-    array.push(<Row index={i} />);
-  }
 
   return (
     <div className="App">
+      {console.log(students.length)}
       <h1> Code Nation Class List </h1>
-
-      <table>{/* {array} */}</table>
+      {/* <br/><br/><br/><br/><br/> */}
+      <table>{array}</table>
+      <displayPerson />
       <p> There are {students.length} of students in this roster.</p>
     </div>
   );
@@ -43,19 +63,19 @@ function Row(props) {
   return (
     <tr>
       <td>
-        <Name text={data[props.index].FirstName} />
+        <Name text={props.person.FirstName} />
       </td>
       <td>
-        <Name text={data[props.index].LastName} />
+        <Name text={props.person.LastName} />
       </td>
       <td>
-        <Name text={data[props.index].Pronouns} />
+        <Name text={props.person.Pronouns} />
       </td>
       <td>
-        <Name text={data[props.index].School} />
+        <Name text={props.person.School} />
       </td>
       <td>
-        <Name text={data[props.index].GraduationYear} />
+        <Name text={props.person.GraduationYear} />
       </td>
     </tr>
   );
