@@ -2,3 +2,16 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+/* .App {
+  font-family: sans-serif;
+  text-align: center;
+} */
+
+.value1 {
+  background-color: rgba(238, 255, 0, 0.719);
+}
+
+.value2 {
+  background-color: rgba(228, 58, 58, 0.719);
+}
