@@ -40,9 +40,11 @@ function Pronouns(parameter) {
   //TODO: Try to figure out how this is not working
   //codintion statement might be a bit weird
 
+
   //if you use console.log() here
   //to check the value of parameter, I think you'll
   //figure it out. You're very close (Nicki)
+
   let codesnippet;
   if (parameter === "He/His") {
     codesnippet = <p class="value1"> {parameter.value} </p>;
